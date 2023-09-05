@@ -1,0 +1,126 @@
+<div class="port">
+    <nav>
+        <img src="/img/ginger-removebg-preview.png" alt="">
+        <a href="/" onclick="route()">Home</a>
+        <a href="/portifolio" onclick="route()">Portifólio</a>
+        <a href="/contact" onclick="route()">Contato</a>
+        <a href="/esg" onclick="route()"></a>
+    </nav>
+    <div id="text">
+
+        <h2>Tudo Que Temos Para Fragrâncias</h2>
+        <div class="hr"></div>
+        <p>Matérias-primas de alta qualidade são o segredo para fragrâncias incríveis.
+            Elas garantem que seu perfume ou aroma dure mais e seja mais agradável. É como usar
+            ingredientes premium para uma refeição deliciosa. Escolher as melhores matérias-primas é a chave para
+            criar fragrâncias memoráveis.</p>
+    </div>
+
+    <!-- Formulário de pesquisa -->
+    <div class="form">
+        <button type="button" id="botaoItem" onclick="pesquisarItem()">Pesquisar</button>
+        <input type="text" id="pesquisaItem" placeholder="Nome do produto, CAS" onkeyup="verificarCampoPesquisa(event)">
+    </div>
+
+<div class="lista-rolavel" id="lista-rolavel">
+    <table>
+        <tbody>
+            <tr>
+                <td>Produto: Rosa Damascena (Óleo Essencial)<br>CAS#: 8007-01-0</td>
+                <td>Tipo da MP: Floral</td>
+            </tr>
+            <tr>
+                <td>Produto: Lavanda (Óleo Essencial)<br>CAS#: 8000-28-0</td>
+                <td>Tipo da MP: Amadeirada</td>
+            </tr>
+            <tr>
+                <td>Produto: Sândalo (Óleo Essencial)<br>CAS#: 8006-87-9</td>
+                <td>Tipo da MP: Amadeirada</td>
+            </tr>
+            <tr>
+                <td>Produto: Vetiver (Óleo Essencial)<br>CAS#: 8016-96-4</td>
+                <td>Tipo da MP: Amadeirada</td>
+            </tr>
+            <tr>
+                <td>Produto: Patchouli (Óleo Essencial)<br>CAS#: 8014-09-3</td>
+                <td>Tipo da MP: Amadeirada</td>
+            </tr>
+            <tr>
+                <td>Produto: Baunilha (Extrato)<br>CAS#: 8024-06-4</td>
+                <td>Tipo da MP: Doce</td>
+            </tr>
+            <tr>
+                <td>Produto: Musk (Sintético)<br>Não possui número CAS único</td>
+                <td>Tipo da MP: Musk</td>
+            </tr>
+            <tr>
+                <td>Produto: Jasmim (Óleo Essencial ou Absoluto)<br>CAS#: 8022-96-6</td>
+                <td>Tipo da MP: Floral</td>
+            </tr>
+            <tr>
+                <td>Produto: Bergamota (Óleo Essencial)<br>CAS#: 8007-75-8</td>
+                <td>Tipo da MP: Cítrica</td>
+            </tr>
+            <tr>
+                <td>Produto: Laranja (Óleo Essencial)<br>CAS#: 8008-57-9</td>
+                <td>Tipo da MP: Cítrica</td>
+            </tr>
+            <tr>
+                <td>Produto: Limão (Óleo Essencial)<br>CAS#: 8008-56-8</td>
+                <td>Tipo da MP: Cítrica</td>
+            </tr>
+            <tr>
+                <td>Produto: Rosa Bulgária (Óleo Essencial ou Absoluto)<br>CAS#: 84604-12-6</td>
+                <td>Tipo da MP: Floral</td>
+            </tr>
+            <tr>
+                <td>Produto: Cedro (Óleo Essencial)<br>CAS#: 8000-27-9</td>
+                <td>Tipo da MP: Amadeirada</td>
+            </tr>
+            <tr>
+                <td>Produto: Incenso (Óleo Essencial)<br>CAS#: 8016-36-2</td>
+                <td>Tipo da MP: Balsâmica</td>
+            </tr>
+            <tr>
+                <td>Produto: Gengibre (Óleo Essencial)<br>CAS#: 8007-08-7</td>
+                <td>Tipo da MP: Picante</td>
+            </tr>
+            <tr>
+                <td>Produto: Ylang-Ylang (Óleo Essencial)<br>CAS#: 8006-81-3</td>
+                <td>Tipo da MP: Floral</td>
+            </tr>
+            <tr>
+                <td>Produto: Pimenta Rosa (Óleo Essencial)<br>CAS#: 8006-77-7</td>
+                <td>Tipo da MP: Picante</td>
+            </tr>
+            <tr>
+                <td>Produto: Gálbano (Óleo Essencial)<br>CAS#: 93165-40-3</td>
+                <td>Tipo da MP: Resinosa</td>
+            </tr>
+            <tr>
+                <td>Produto: Sálvia (Óleo Essencial)<br>CAS#: 84082-66-6</td>
+                <td>Tipo da MP: Herbal</td>
+            </tr>
+            <tr>
+                <td>Produto: Eucalipto (Óleo Essencial)<br>CAS#: 8000-48-4</td>
+                <td>Tipo da MP: Fresca</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+
+    <!-- Resultado da pesquisa -->
+    <div id="resultadoPesquisa">
+    </div>
+</div>
+
+<script>
+    jQuery(document.body).on('keypress', '#myForm', function (e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        $("#botaoItem").trigger("click");
+    }
+});
+</script>

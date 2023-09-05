@@ -1,0 +1,1098 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #fff;
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    background-image: url(img/depositphotos_211026552-stock-photo-touch.jpeg);
+
+    width: 100vw;
+    height: 100vh;
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.3) 0.01%, rgba(255, 255, 255, 0.3) 99.98%);
+
+    width: 100vw;
+    height: clamp(2rem, 7rem, 10rem);
+    padding: .1rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+a {
+    color: #FDFF01;
+    font-family: Poppins;
+    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.3s;
+    text-decoration: none;
+  
+    cursor: pointer
+}
+
+a:hover {
+    color: #AFDFE4;
+    transform: scale(1.2);
+}
+
+nav img {
+    width: clamp(3.5rem, 13rem, 16rem);
+    height: clamp(3.5rem, 6rem, 10rem);
+}
+
+.page h1 {
+    width: 10rem;
+    color: #FFF;
+    font-family: Lato;
+    font-size: clamp(2rem, 4rem, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.linha {
+    border: 1px solid #fff;
+
+    margin: 1rem 0;
+}
+
+.page p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: clamp(.5rem, 1.2rem, 3rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 30rem;
+
+    margin-bottom: 10rem;
+}
+
+.page {
+    padding: 2.5rem;
+}
+
+#button a {
+    margin: auto;
+    border: 1px solid white;
+    width: 15rem;
+    height: 3.5rem;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+
+    transition: 0.3s;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-decoration: none;
+}
+
+#button a {
+    color: #fff;
+}
+
+#button a:hover {
+    color: #AE1759;
+    background-color: #fff;
+}
+
+/*pagina de portifolio*/
+
+#text {
+    padding: 7rem 3rem;
+}
+
+#text h2 {
+    color: #47166B;
+    font-family: Lato;
+    font-size: clamp(1.5rem, 3rem, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+
+    margin-top: 2rem;
+
+    width: 30rem;
+}
+
+#text p {
+    color: #47166B;
+    font-family: Lato;
+    font-size: clamp(0.5rem, 1.2rem, 1.8rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    max-width: 28rem;
+}
+
+.hr {
+    margin: 1rem 0;
+    border: 1px solid #47166B;
+    width: 30rem;
+}
+
+.port {
+    background-image: url(img/whiteBody.png);
+    background-color: #fff;
+
+    position: relative;
+    z-index: 0;
+
+    background-position: center;
+    background-size: cover;
+   
+
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+.port nav img {
+    width: clamp(3.5rem, 13rem, 16rem);
+    height: clamp(3.5rem, 6rem, 10rem);
+    padding: 0;
+}
+
+.port nav {
+    background: #47166B;
+    width: 100vw;
+    height: clamp(2rem, 7rem, 10rem);
+    padding: .1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    z-index: 2; /* Ajuste o z-index para um valor maior */
+}
+
+.port a {
+    color: #fff;
+    font-family: Poppins;
+    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2; /* Ajuste o z-index para um valor maior */
+}
+
+.port a:hover {
+    color: #AFDFE4;
+    transform: scale(1.2);
+}
+
+.port img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Formulario*/
+
+.form {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form button {
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px 0px 0px 5px;
+    background: #47166B;
+    padding: 1rem 1rem;
+    border: none;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.form input {
+    border-radius: 0px 5px 5px 0px;
+    background: #ECD5D5;
+    border: none;
+    padding: 1.1rem;
+    margin-bottom: 1rem;
+
+    height: 5rem;
+
+    width: 21.5rem;
+}
+
+.form button {
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    height: 5rem;
+}
+
+.form button:hover {
+    background-color: #ae1759;;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+table {
+    margin: auto;
+
+}
+
+table td {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+table td:nth-child(2) {
+    width: 6.5rem;
+    text-align: initial;
+}
+
+table tr {
+    background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    padding-right: 2rem;
+
+    width: 30rem;
+    height: 6rem;
+
+    margin-top: 1rem;
+   
+}
+
+table tr:first-child{
+    margin-top: 0;
+}
+
+/* Estilo para tabelas de resultados */
+#resultadoPesquisa table {
+    margin: auto;
+  }
+  
+  #resultadoPesquisa table tr {
+    background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    padding-right: 3rem;
+
+    width: 30rem;
+    height: 6rem;
+    
+    
+  }
+
+  #resultadoPesquisa p {
+    background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    padding-right: 6rem;
+
+    width:  33.5rem;
+    height:6rem;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: auto;
+  }
+
+  
+/*CONTATO*/
+
+
+#conta {
+    padding: 7rem 3rem;
+}
+
+form {
+    padding: 10rem 3rem;
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+}
+
+form button {
+    width: 20rem;
+    height: 3.2rem;
+
+    border-radius: 5px;
+    border: none;
+    background-color: #47166B;
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #200136;
+
+    transform: scale(1.1);
+}
+
+.inpu input {
+    font-family: Lato;
+    font-size: 1.5rem;
+}
+
+.contato {
+    background-image: url(img/whiteBody.png);
+    background-color: #fff;
+
+    position: relative;
+    z-index: 0;
+
+    background-position: center;
+    background-size: cover;
+   
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.contato nav img {
+    width: clamp(3.5rem, 13rem, 16rem);
+    height: clamp(3.5rem, 6rem, 10rem);
+    padding: 0;
+}
+
+.contato nav {
+    background: #47166B;
+    width: 100vw;
+    height: clamp(2rem, 7rem, 10rem);
+    padding: .1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    z-index: 2; /* Ajuste o z-index para um valor maior */
+}
+
+.contato a {
+    color: #fff;
+    font-family: Poppins;
+    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2; /* Ajuste o z-index para um valor maior */
+}
+
+.contato a:hover {
+    color: #AFDFE4;
+    transform: scale(1.2);
+}
+
+.contato h1 {
+    color: #47166B;
+    font-family: Lato;
+    font-size: clamp(1.5rem, 3rem, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+
+    margin-top: 2rem;
+
+    width: 30rem;
+}
+
+.contato p {
+    color: #47166B;
+    font-family: Lato;
+    font-size: clamp(0.5rem, 1.3rem, 1.8rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    max-width: 44rem;
+}
+
+.contato .hr {
+    margin: 1rem 0;
+    border: 1px solid #47166B;
+    width: 25rem;
+}
+
+.inpu input {
+    border: none;
+    border-bottom: 3px solid #47166B;
+    width: 20rem;
+}
+
+.inpu input:focus {
+    outline: none;
+}
+
+@media (min-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+    
+        background-color: #fff;
+      
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .home {
+        background-image: url(img/depositphotos_284311814-stock-photo-ginger-background-beautiful-beauty-bloom.jpeg);
+    
+        width: 100vw;
+        height: 100vh;
+      
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav {
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.3) 0.01%, rgba(255, 255, 255, 0.3) 99.98%);
+    
+        width: 100vw;
+        height: clamp(5rem, 7rem, 10rem);
+        padding: clamp(.5rem, .8rem, 1rem);
+    
+        display: flex;
+        align-items: center;
+    
+        gap: 3.5rem;
+    }
+    
+    a {
+        color: #FDFF01;
+        font-family: Poppins;
+        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        text-decoration: none;
+      
+        cursor: pointer
+    }
+    
+    a:hover {
+        color: #AFDFE4;
+        transform: scale(1.2);
+    }
+    
+    nav img {
+        width: clamp(15rem, 15rem, 25rem);
+        height: clamp(3.5rem, 7rem, 10rem);
+    }
+
+    .page {
+        display: flex;
+        text-align: center;
+        
+
+        justify-content: space-between;
+
+        width: 85rem;
+
+        padding: 6rem;
+        
+    }
+    
+    .page h1 {
+        width: 10rem;
+        color: #FFF;
+        font-family: Lato;
+        font-size: clamp(2rem, 4rem, 5rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    
+    .page p {
+        margin-left: -15rem;
+
+        color: #FFF;
+        font-family: Lato;
+        font-size: clamp(.5rem, 1.8rem, 3rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+
+        width: 44rem;
+
+        text-align: l;
+    }
+    
+    .linha {
+        border: 1px solid #fff;
+    
+        margin: 1rem 0;
+
+        width: 0;
+        height: 10rem;
+
+        margin-top: -1rem;
+    }
+    
+    #button a {
+        margin: auto;
+        border: 2px solid white;
+        width: 18rem;
+        height: 4rem;
+    
+        box-sizing: border-box;
+        border-radius: 5px;
+    
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    
+        transition: 0.3s;
+    
+        color: #FFF;
+        font-family: Lato;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        text-decoration: none;
+    }
+    
+    #button a {
+        color: #fff;
+    }
+    
+    #button a:hover {
+        color: #AE1759;
+        background-color: #fff;
+        transform: scale(1.1);
+    }
+
+    /*PORTIFOLIO PC*/
+
+    .port {
+        background-image: url(img/Group\ 18.png);
+        background-color: #fff;
+    
+        position: relative;
+        z-index: 0;
+    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    
+    .port nav img {
+        width: clamp(15rem, 15rem, 25rem);
+        height: clamp(3.5rem, 7rem, 10rem);
+        padding: 0;
+    }
+    
+    .port nav {
+        background: #47166B;
+        width: 100vw;
+
+        height: clamp(5rem, 7rem, 10rem);
+        padding: clamp(.5rem, .8rem, 1rem);
+    
+        display: flex;
+        align-items: center;
+    
+        gap: 3.5rem;
+    }
+    
+    .port a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        text-decoration: none;
+      
+        cursor: pointer;
+    }
+    
+    .port a:hover {
+        color: #AFDFE4;
+        transform: scale(1.2);
+    }
+    
+    .port img {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #text {
+        display: flex;
+        padding: 11rem 9rem;
+    }
+    
+    #text h2 {
+        color: #47166B;
+        font-family: Lato;
+        font-size: clamp(1.5rem, 3rem, 5rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+    
+        width: 30rem;
+    }
+    
+    #text p {
+        color: #47166B;
+        font-family: Lato;
+        font-size: clamp(0.5rem, 1.3rem, 1.8rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        max-width: 40rem;
+    }
+    
+    .hr {
+        margin: 3.5rem 0;
+        border: 1px solid #47166B;
+        width: 10rem;
+        height: 0;
+        transform: rotate(90deg);
+    }
+
+    table {
+        margin: auto;
+    
+    }
+    
+    table td {
+        color: #FFF;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    table td:nth-child(2) {
+        width: 15rem;
+        text-align: initial;
+
+    }
+    
+    table tr {
+        background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+    
+        border-radius: 5px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 2rem;
+    
+        padding-right: 3rem;
+    
+        width: 51.5rem;
+        height: 7rem;
+        margin-top: 1rem;
+    }
+    
+    /* Estilo para tabelas de resultados */
+    #resultadoPesquisa table {
+        margin: auto;
+      }
+      
+      #resultadoPesquisa table tr {
+        background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+    
+        border-radius: 5px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 2rem;
+    
+        padding-right: 6rem;
+    
+        width: 51.5rem;
+        height:6rem;
+      }
+
+      #resultadoPesquisa p {
+        background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+    
+        border-radius: 5px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 2rem;
+    
+        padding-right: 6rem;
+    
+        width: 51.5rem;
+        height:6rem;
+
+        color: #FFF;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        margin: auto;
+      }
+    
+    /*Formulario*/
+
+    .contato {
+        background-image: url(img/Group\ 18.png);
+        background-color: #fff;
+    
+        position: relative;
+        z-index: 0;
+    
+        background-position: center;
+        background-size: cover;
+       
+    
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .contato nav img {
+        width: clamp(15rem, 15rem, 25rem);
+        height: clamp(3.5rem, 7rem, 10rem);
+        padding: 0;
+    }
+    
+    .contato nav {
+        background: #47166B;
+        width: 100vw;
+        
+        width: 100vw;
+        height: clamp(5rem, 7rem, 10rem);
+        padding: clamp(.5rem, .8rem, 1rem);
+    
+        display: flex;
+        align-items: center;
+    
+        gap: 3.5rem;
+    }
+    
+    .contato a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        text-decoration: none;
+      
+        cursor: pointer;
+    }
+    
+    .contato a:hover {
+        color: #AFDFE4;
+        transform: scale(1.2);
+    }
+    
+    .contato h1 {
+        color: #47166B;
+        font-family: Lato;
+        font-size: clamp(1.5rem, 3rem, 5rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+    
+        width: 30rem;
+    }
+    
+    .contato p {
+        color: #47166B;
+        font-family: Lato;
+        font-size: clamp(0.5rem, 1.3rem, 1.8rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        width: 22rem;
+    }
+    
+    .contato .hr {
+        margin: 1rem 0;
+        border: 1px solid #47166B;
+        width: 7rem;
+    }
+    .form {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form button {
+        display: flex;
+        align-items: center;
+
+        border-radius: 5px 0px 0px 5px;
+        background: #47166B;
+        padding: 1.5rem 2.5rem;
+        border: none;
+
+        color: #FFF;
+        font-family: Lato;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .form input {
+        border-radius: 0px 5px 5px 0px;
+        background: #ECD5D5;
+        border: none;
+        padding:  1.6rem 1.5rem;
+        margin-bottom: 1rem;
+
+        width: 40rem;
+    }
+
+    .form button {
+        outline: none;
+        transition: 0.3s;
+        margin-bottom: 1rem;
+
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form button:hover {
+        background-color: #ae1759;;
+    }
+
+    .form input:focus {
+        outline: none;
+    }
+
+    ul, li {
+        display: flex;
+        gap: 0.5rem;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+
+    .lista-rolavel li {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        width: 51.5rem;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 5px 5px 5px 5px;
+        border: none;
+        background: linear-gradient(90deg, #47166B 20.07%, #00619C 100%);
+        font-family: Lato;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        transition: 1s;
+    }
+    
+    .lista-rolavel li p {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        margin: 0.2rem 0;
+    }
+
+    .lista-rolavel li:hover {
+        background: linear-gradient(90deg, #26063d 100%, #26063d 100%);
+    }
+
+
+
+    #texto {
+        padding: 3.7rem 0 0 6rem;
+
+        display: flex;
+        width: 60rem;
+        align-items: center;
+    }
+    
+    form {
+        padding: 7.2rem 0;
+    
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        flex-direction:column;
+        justify-content: center;
+    }
+    
+    form button {
+        width: 30rem;
+        height: 3.5rem;
+    
+        border-radius: 5px;
+        border: none;
+        background-color: #47166B;
+    
+        color: #FFF;
+        font-family: Lato;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        transition: 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #200136;
+    
+        transform: scale(1.1);
+    }
+    
+    .inpu input {
+        font-family: Lato;
+        font-size: 1.5rem;
+    }
+    
+    
+    .inpu input {
+        border: none;
+        border-bottom: 3px solid #47166B;
+        width: 30rem;
+    }
+    
+    .inpu input:focus {
+        outline: none;
+    }
+}
