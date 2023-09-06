@@ -20,7 +20,7 @@ body {
 }
 
 .home {
-    background-image: url(img/depositphotos_211026552-stock-photo-touch.jpeg);
+    background-image: url(img/antony-bec-nD9tEn63suc-unsplash.jpg);
 
     width: 100vw;
     height: 100vh;
@@ -31,11 +31,11 @@ body {
 }
 
 nav {
-    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.3) 0.01%, rgba(255, 255, 255, 0.3) 99.98%);
+    background: rgba(255, 255, 255, 0.6);
 
     width: 100vw;
     height: clamp(2rem, 7rem, 10rem);
-    padding: .1rem;
+    padding: .6rem;
 
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ nav {
 }
 
 a {
-    color: #FDFF01;
+    color: #f15a29;
     font-family: Poppins;
     font-size: clamp(.5rem, 1.5rem, 6rem);
     font-style: normal;
@@ -62,8 +62,8 @@ a:hover {
 }
 
 nav img {
-    width: clamp(3.5rem, 13rem, 16rem);
-    height: clamp(3.5rem, 6rem, 10rem);
+    width: 13rem;
+    height: 13rem;
 }
 
 .page h1 {
@@ -196,7 +196,7 @@ nav img {
     background: #47166B;
     width: 100vw;
     height: clamp(2rem, 7rem, 10rem);
-    padding: .1rem;
+    padding: .6rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -303,6 +303,10 @@ table td {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+table td:first-child {
+    width: 15rem;
 }
 
 table td:nth-child(2) {
@@ -456,7 +460,7 @@ form button:hover {
     background: #47166B;
     width: 100vw;
     height: clamp(2rem, 7rem, 10rem);
-    padding: .1rem;
+    padding: .6rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -490,6 +494,7 @@ form button:hover {
     font-weight: 700;
     line-height: normal;
     display: flex;
+    
 
     margin-top: 2rem;
 
@@ -542,7 +547,7 @@ form button:hover {
     }
     
     .home {
-        background-image: url(img/depositphotos_284311814-stock-photo-ginger-background-beautiful-beauty-bloom.jpeg);
+        background-image: url(img/antony-bec-nD9tEn63suc-unsplash.jpg);
     
         width: 100vw;
         height: 100vh;
@@ -552,10 +557,10 @@ form button:hover {
         background-repeat: no-repeat;
     }
     nav {
-        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.3) 0.01%, rgba(255, 255, 255, 0.3) 99.98%);
+        background: rgba(255, 255, 255, 0.5);
     
         width: 100vw;
-        height: clamp(5rem, 7rem, 10rem);
+        height: clamp(5rem, 9rem, 10rem);
         padding: clamp(.5rem, .8rem, 1rem);
     
         display: flex;
@@ -565,9 +570,9 @@ form button:hover {
     }
     
     a {
-        color: #FDFF01;
+        color: #f15a29;
         font-family: Poppins;
-        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-size: clamp(1rem, 1.8rem, 3rem);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -583,8 +588,8 @@ form button:hover {
     }
     
     nav img {
-        width: clamp(15rem, 15rem, 25rem);
-        height: clamp(3.5rem, 7rem, 10rem);
+        width: 22rem;
+        height: 22rem;
     }
 
     .page {
@@ -608,6 +613,8 @@ form button:hover {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
+        
     }
     
     
@@ -622,9 +629,9 @@ form button:hover {
         line-height: normal;
         
 
-        width: 44rem;
+        width: 43rem;
 
-        text-align: l;
+        text-align: initial;
     }
     
     .linha {
@@ -694,8 +701,8 @@ form button:hover {
     }
     
     .port nav img {
-        width: clamp(15rem, 15rem, 25rem);
-        height: clamp(3.5rem, 7rem, 10rem);
+        width: clamp(15rem, 22rem, 25rem);
+        height: clamp(3.5rem, 10rem, 10rem);
         padding: 0;
     }
     
@@ -703,7 +710,7 @@ form button:hover {
         background: #47166B;
         width: 100vw;
 
-        height: clamp(5rem, 7rem, 10rem);
+        height: clamp(5rem, 9rem, 10rem);
         padding: clamp(.5rem, .8rem, 1rem);
     
         display: flex;
@@ -787,6 +794,8 @@ form button:hover {
         font-weight: 700;
         line-height: normal;
     }
+
+   
 
     table td:nth-child(2) {
         width: 15rem;
@@ -878,8 +887,8 @@ form button:hover {
     }
     
     .contato nav img {
-        width: clamp(15rem, 15rem, 25rem);
-        height: clamp(3.5rem, 7rem, 10rem);
+        width: clamp(15rem, 22rem, 25rem);
+        height: clamp(3.5rem, 10rem, 10rem);
         padding: 0;
     }
     
@@ -888,7 +897,7 @@ form button:hover {
         width: 100vw;
         
         width: 100vw;
-        height: clamp(5rem, 7rem, 10rem);
+        height: clamp(5rem, 9rem, 10rem);
         padding: clamp(.5rem, .8rem, 1rem);
     
         display: flex;
@@ -1044,6 +1053,7 @@ form button:hover {
         display: flex;
         width: 60rem;
         align-items: center;
+
     }
     
     form {
